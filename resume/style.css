@@ -1,0 +1,159 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+    color: #f5a623;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #f5a623;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    width: 80%;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+/* Table Styles */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+th {
+    background: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+}
+
+/* Lists Styling */
+ol, ul {
+    list-style: none;
+    text-align: center;
+    width: 50%;
+    margin: 10px auto;
+    padding: 0;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+/* Form Styling */
+form {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 20px auto;
+    text-align: left;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+input[type='submit'] {
+    background: #f5a623;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type='submit']:hover {
+    background: #e59400;
+}
+
+/* Image */
+img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    transition: transform 0.5s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Social Media Icons */
+a i {
+    font-size: 2rem;
+    color: #f5a623;
+    margin: 20px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+a i:hover {
+    transform: scale(1.2);
+    color: #e59400;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
